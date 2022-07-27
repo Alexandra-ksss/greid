@@ -24,5 +24,5 @@ VALUES (2, 'Петр', 1),
 VALUES (3, 'Михаил', 2);
 
 SELECT User.Name, Groups.Name FROM Users
-LEFT JOIN Groups
+INNER JOIN Groups
 ON Users.Groups = Group.Id;
