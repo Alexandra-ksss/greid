@@ -42,6 +42,24 @@
     });
 </script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('#formGreid3').submit(function( event ) {
+        var xhr = new XMLHttpRequest();
+
+        var json = JSON.stringify({
+            text: $('.text').val(),
+            name: $('.name').val(),
+            email: $('.email').val(),
+        });
+
+        xhr.open("POST", '/test/', true)
+        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
+        xhr.send(json);
+    });
+</script>
+
 <?php
 
 echo '<pre>',var_export($_POST),'</pre>';
