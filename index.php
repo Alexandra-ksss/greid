@@ -62,18 +62,16 @@
 </script>
 
 
+
 <script>
     $('#formGreid3').submit(function(event) {
         $.ajax({
             url: '/test/',
             method: 'post',
             dataType: 'json',
-            data: {
-                text: $('.text').val(),
-                name: $('.name').val(),
-                email: $('.email').val(),
-            },
-            success: function(data){}
+            data: $('#formGreid3').serialize(),
+            success: function(data){
+            }
         });
     });
 </script>
