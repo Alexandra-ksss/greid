@@ -1,6 +1,6 @@
 
 
-<form id="formGreid" name="greid1" method="post" action="/test/" enctype="application/x-www-form-urlencoded">
+<form id="formGreid" name="greid1" method="post" action="" enctype="application/x-www-form-urlencoded">
     <h3>greid1</h3>
     <label>Текст </label><input type="text" name="text"><br>
     <label>Имя </label><input type="text" name="name"><br>
@@ -8,7 +8,7 @@
     <button type="submit">Отправить</button>
 </form>
 
-<form id="formGreid2" name="greid2" method="post" action="/test/" enctype="multipart/form-data">
+<form id="formGreid2" name="greid2" method="post" action="" enctype="multipart/form-data">
     <h3>greid2</h3>
     <label>Текст </label><input type="text" name="text"><br>
     <label>Имя </label><input type="text" name="name"><br>
