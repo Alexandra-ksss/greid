@@ -1,0 +1,12 @@
+<?php
+$pdo = new PDO($puth, $user, $pass);
+
+$sql = 'SELECT Id, Name FROM Users ORDER BY Name';
+
+$results = $pdo->query($sql);
+$result = $results->fetchAll();
+
+foreach ($result as $item) {
+    echo '<pre>',print_r($item['Id'],true),'</pre>';
+    echo '<pre>',print_r($item['Name'],true),'</pre>';
+}
